@@ -1,3 +1,4 @@
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ListComponent } from '../investiments/components/list/list.component';
 
@@ -9,7 +10,8 @@ describe('BankingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BankingComponent, ListComponent] // Declara aqui componentes e/ou services que estão dentro de outros.
+      declarations: [BankingComponent, ListComponent], // Declara aqui componentes e/ou services que estão dentro de outros.
+      imports: [HttpClientTestingModule]
     })
       .compileComponents();
 
