@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Investiments } from '../model/investiments';
+import { Investiments } from '../../model/investiments';
 
 @Component({
   selector: 'app-list',
